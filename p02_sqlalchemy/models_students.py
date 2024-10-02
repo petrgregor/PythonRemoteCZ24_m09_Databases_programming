@@ -9,6 +9,7 @@ class Student(Base):
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     first_name = Column(String(30))
     last_name = Column(String(30))
+    class_name = Column(String(30))  # musíme přidat sloupec pomocí p04_alter_table
 
     def __repr__(self):
         return f"Student(first_name={self.first_name}, last_name={self.last_name})"
