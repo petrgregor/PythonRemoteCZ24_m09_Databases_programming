@@ -1,5 +1,9 @@
 from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base, mapped_column
+
+#from sqlalchemy.ext.declarative import declarative_base
+# MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base().
+# (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
 
 Base = declarative_base()
 
